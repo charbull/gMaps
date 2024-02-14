@@ -65,6 +65,8 @@ function getStation(town_name) {
   return HOH;
   else if (town_name == "Larchmont")
   return LARCHMONT;
+  else throw new Error('Error: Please provide a valid destination address, no default train station found for ${town_name}');
+
 }
 
 function test(){
